@@ -99,7 +99,7 @@ exports.getText = getText;
 function getDefaultTypeFormatFlags(enclosingNode) {
     let formatFlags = typescript_1.TypeFormatFlags.UseTypeOfFunction |
         typescript_1.TypeFormatFlags.NoTruncation |
-        typescript_1.TypeFormatFlags.UseFullyQualifiedType |
+        // typescript_1.TypeFormatFlags.UseFullyQualifiedType |
         typescript_1.TypeFormatFlags.WriteTypeArgumentsOfSignature;
     if (enclosingNode && enclosingNode.kind === typescript_1.SyntaxKind.TypeAliasDeclaration)
         formatFlags |= typescript_1.TypeFormatFlags.InTypeAlias;
